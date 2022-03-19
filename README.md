@@ -11,10 +11,6 @@ The biggest technical challenge I faced during production is the passing of prop
 
 Lessons Learned -
 
-A lot of mistakes were from me lazily not following the naming conventions.
-
-Every time I thought I created enough routes and components I ended up needing another, and another, and another…
-
-But the biggest mistake came from not taking more time to properly structure the site on paper before jumping into writing code.
+A lot of mistakes were from me lazily not following the naming conventions. Every time I thought I created enough routes and components I ended up needing another, and another, and another… But the biggest mistake came from not taking more time to properly structure the site on paper before jumping into writing code.
 
 Enjoy Enchanted Forest to Table cuisine
