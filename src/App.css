@@ -1,38 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Limelight&family=MedievalSharp&display=swap");
+
+.App {
+  font-family: "MedievalSharp", cursive;
+  background-color: #0d0d0d;
+}
+
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #0d0d0d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* HOME PAGE */
+#home-page {
+  background-color: #0d0d0d;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+#parallax-world-of-ugg h2 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+#parallax-world-of-ugg h3 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: white;
+}
+#parallax-world-of-ugg p {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 80px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.sc {
+  color: #897c6e;
+}
+.ny {
+  color: #897c6e;
+}
+.atw {
+  color: #897c6e;
+}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: #897c6e;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: #0d0d0d;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background: #897c6e;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 400px;
+  padding-bottom: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("./assets/Serges_Tavern.png");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("./assets/dinning_room.png");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("./assets/farm_to_table.png");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom: 1px solid #897c6e;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
   }
 }
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
+/* HOME PAGE */
+
+/* MENU */
+#menu-container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 50vh;
+  background-color: #0d0d0d;
+}
+
+#menu-box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px #897c6e;
+  line-height: 0;
+}
+
+#menu-box > img {
+  width: 100%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#menu-box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 1vh;
+  line-height: 2.6;
+  color: #897c6e;
+}
+
+#menu-box:hover {
+  flex: 1 1 25%;
+}
+#menu-box:hover > img {
+  width: 80%;
+  height: 80%;
+}
+/* MENU */
+
+/* NAV BAR */
+#nav-bar {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 25px;
+}
+
+#nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: inline;
+  padding-right: 40px;
+}
+
+#nav-bar a:hover {
+  color: #897c6e;
+}
+/* NAV BAR */
+
+/* HOURS & INFO */
+#hours-info {
+  background-color: #0d0d0d;
+  color: #897c6e;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+}
+#hours-info h2 {
+  padding-top: 50px;
+}
+#location {
+  background-color: #0d0d0d;
+  color: #897c6e;
+  padding-top: 150px;
+}
+#location a {
+  color: #897c6e;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: inline;
+  padding-right: 40px;
+}
+
+#location a:hover {
+  color: white;
+}
+/* HOURS & INFO */
+
+/* LOG IN */
+.another-div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form {
+  background-color: #0d0d0d;
+  /* border-radius: 10px; */
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  padding-bottom: 300px;
+  width: 320px;
+  box-shadow: 0 0 30px #897c6e;
+}
+
+.reso-form {
+  background-color: #0d0d0d;
+
+  box-sizing: border-box;
+  height: 800px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 0 30px #897c6e;
+}
+.update-reso-form {
+  background-color: #0d0d0d;
+
+  box-sizing: border-box;
+  height: 900px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 0 30px #897c6e;
+}
+
+.title {
+  color: #eee;
+  font-family: "MedievalSharp", cursive;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: "MedievalSharp", cursive;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #897c6e;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 80px;
+}
+
+
+.cut-short {
+  width: 80px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: white;
+  font-family: "MedievalSharp", cursive;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #897c6e;
+}
+
+.submit {
+  background-color: white;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  font-family: "MedievalSharp", cursive;
+}
+
+.submit:hover {
+  background-color: #897c6e;
+  color: white;
+}
+/* LOG IN */
+
+/* RESO */
+.reso-scroll {
+  position: relative;
+  text-align: center;
+  padding: 5%;
+}
+
+.centered-scroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* RESO */
+
+.login-signup {
+  color: #0d0d0d;
+  height: 150vh;
+}
+
+/* FOOTER */
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+} */
